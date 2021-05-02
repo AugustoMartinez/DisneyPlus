@@ -1,0 +1,572 @@
+body{
+    background: #040714;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    background: #090b13;
+    z-index: 2000;
+    padding: 0 38px;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+}
+nav div{
+    display: block;
+}
+nav .div1{
+    float:right;
+}
+
+.nav__boton{
+    font-size: 15px;
+    font-weight: 300;
+    display: inline-block;
+    text-decoration: none;
+    color: #F9F9F9;
+    padding: 8px 16px;
+    margin: 0;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+.nav__boton--suscribcion{
+    font-size: 15px;
+    font-weight: 300;
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 0;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+.nav__boton--login{
+    margin-left: 18px;
+    transition: background .2s ease;
+    -webkit-transition: background .2s ease;
+    -moz-transition: background .2s ease;
+    -ms-transition: background .2s ease;
+    -o-transition: background .2s ease;
+}
+.nav__boton--login:hover{
+    background: white;
+    color: black;
+}
+.nav__img{
+    display: block;
+    width: 80px;
+    height: 43.53px;
+}
+
+.guardar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+.guardar:nth-child(2){
+    display: none;
+}
+.presentacion__fondo{
+    width: 100%;
+    height: 100%;
+    user-select: none;
+}
+
+.presentacion{
+    margin: 133px 40px 18px 40px;
+    position: relative;
+    z-index: 10;
+}
+
+.h1__frase{
+    font-size: 36px;
+}
+.h1__frase span{
+    display: block;
+}
+.contenedor__img{
+    margin-bottom: 20px;
+}
+.presentacion__img{
+    width: 160px;
+    height: 87.08px;
+}
+.suscribcion__div{
+    margin-top: 30px;
+}
+.suscribcion{
+    display: inline-block;
+    margin-right: 30px;
+}
+.suscribcion__precio{
+    font-size: 28px;
+}
+.suscribcion__precio span{
+    opacity: .7;
+    font-size: 14px;
+    font-weight: 400;
+}
+.suscribcion__boton{
+    text-decoration: none;
+    min-width: 340px;
+    font-size: 18px;
+    word-spacing: 4px;
+    padding: 16.5px 14px;
+    border: 1px solid transparent;
+    font-weight: 300;
+    letter-spacing: 1.2px;
+}
+
+.presentacion p{
+    font-size: 11px;
+    margin-top: 20px;
+}
+.marcas{
+    margin-top: 88px;
+    width: 600px;
+}
+.subtext{
+    font-weight: 300;
+    letter-spacing: .3px;
+    word-spacing: .6px;
+    opacity: .7;
+    font-size: 14px;
+}
+
+.flecha{
+    animation: movimiento 1.2s infinite alternate;
+    -webkit-animation: movimiento 1.2s infinite alternate;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 400;
+}
+
+.flecha a{
+    color: white;
+    
+}
+
+.dispositivos{
+    position: relative;
+    z-index: 14;
+    text-align: left;
+}
+.dispositivos__div{
+    position: relative;
+    z-index: 15;
+    padding: 60px 40px;
+    display: flex;
+    flex-flow: row wrap;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+.dispositivos__texto{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0 4% 0 0;
+    box-sizing: border-box;
+    margin-top: 20px;
+    width: 50%;
+    flex: 1 0 auto;
+}
+
+.dispositivos__texto h1{
+    font-size: 34px;
+    margin: 0 0 20px;
+}
+.dispositivos__texto p{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    color: hsla(0,0%,75.3%,.8);
+}
+
+.dispositivos__imagen{
+    width: auto;
+    display: block;
+    flex: 1 1 auto;
+}
+.dispositivos__imagen img{
+    width: 634.5px;
+    height: 507.59px;
+}
+
+.sep{
+    padding-top:60px;
+    padding-bottom: 60px;
+}
+.productos{
+    padding: 0px 37px;
+    text-align: center;
+}
+.productos h1{
+    font-size: 36px;
+    margin: 0 0 24px;
+}
+.productos p{
+    font-weight: 300;
+    font-size: 18px;
+    color: hsla(0,0%,75.3%,.8);
+    margin: 0 0 24px;
+}
+
+.algo1{
+    margin: 0 -12px;
+    overflow-x: hidden;
+    padding: 0 40px;
+}
+.algo1-1{
+    border-radius: 4px;
+    padding: 12px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.algo1-1 .grid-cell img{
+    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+}
+
+.carrusel{
+    margin: 0 auto;
+}
+
+
+.div__boton{
+    position: relative;
+    padding: 60px 40px;
+    text-align: center;
+}
+.suscribcion__boton--solo{
+    display: inline-block;
+}
+
+.leon__div{
+    position: relative;
+    margin: 0px 40px;
+    padding: 60px 0;
+}
+.leon__img {
+    position: relative;
+    z-index: 500;
+}
+.leon__img:nth-child(2){
+    display: none;
+}
+.leon__img img{
+    width: 100%;
+    height: 100%;
+}
+.leon__texto{
+    position: absolute;
+    margin-right: 70px;
+    z-index: 501;
+    top: 37%;
+    left: 52%;
+    transform: translateZ(-50%);
+    -webkit-transform: translateZ(-50%);
+    -moz-transform: translateZ(-50%);
+    -ms-transform: translateZ(-50%);
+    -o-transform: translateZ(-50%);
+}
+.leon__texto h3{
+    font-size: 34px;
+    margin-bottom: 0 0 24px;
+}
+.leon__texto p{
+    line-height: 30px;
+    font-size: 18px;
+    margin-top: -10px;
+    letter-spacing: 1.2;
+    font-weight: 300;
+    color: hsla(0,0%,75.3%,.8);   
+}
+.content__disp{
+    padding: 60px 40px;
+}
+.contenido__disp{
+    text-align: center;
+    margin: 0 -12px;
+}
+.grid__itemdisp{
+    padding: 12px;
+}
+
+.disp__img img{
+    width: 100%;
+    height: 100%;
+}
+
+.disp__text h4{
+    font-size: 22px;
+    margin: 26px 0;
+}
+.disp__text p{
+    color: hsla(0,0%,75.3%,.8);
+    font-weight: 300;
+    font-size: 19px;
+    margin: 8px 0;
+}
+.cont__text{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.div__footer{
+    text-align: center;
+    font-size: 12px;
+    padding: 26px 80px;
+    color: hsla(0,0%,75.3%,.8);
+}
+
+.footer__link{
+    margin-bottom: 6px;
+}
+.footer__link a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 8px 12px;
+    color: hsla(0,0%,75.3%,.8);
+}
+.footer__img{
+    margin-bottom: 4px;
+}
+.footer__img img{
+    width: 83px;
+    height: 45px;
+}
+.copyright{
+    margin: 0 0 24px;
+}
+.texto__final{
+    padding: 0 100px;
+    margin: 0 0 16px;
+}
+
+@media screen and (max-width:768px){
+    .guardar:first-child{
+        display: none;
+    }
+    .guardar:nth-child(2){
+        display: block;
+    }
+    .sec{
+        padding-top: 80px;
+    }
+    .presentacion{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 28% 40px 18px 40px;
+        text-align: center;
+    }
+    .suscribcion__boton{
+        padding: 10px;
+        font-size: 1rem;
+    }
+    .suscribcion{
+        margin-right: 0;
+    }
+    .suscribcion:first-child{
+        padding: 12px;
+        border-bottom: 2px solid rgba(192, 192, 192, 0.2);
+        margin-bottom: 5px;
+    }
+    .h1__frase{
+        font-size: 24px;
+    }
+    .h1__frase span{
+        display: inline;
+    }
+    .div__footer{
+        padding: 26px 10%;
+    }
+    .texto__final{
+        padding: 0 15%;
+    }
+    .div__marcas{
+        display: none;
+    }
+    .flecha{
+        position: relative;
+    }
+    .dispositivos__texto{
+        text-align: center;
+        order: 3;
+    }
+    .dispositivos__imagen{
+        order: 1;
+    }
+    .dispositivos__div{
+        padding-bottom: 40px;
+    }
+    .sep{
+        padding: 40px 0;
+    }
+    .div__boton{
+        padding: 40px;
+    }
+    .leon__div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 0;
+    }
+    .leon__img:first-child{
+        display: none;
+    }
+    .leon__img:nth-child(2){
+        display: block;
+        order: 3;
+    }
+    .leon__texto{
+        text-align: center;
+        position: relative;
+        margin-right: 0;
+        top: 0;
+        left: 0;
+        order: 1;
+    }
+    .dispositivos__texto h1{
+        font-size: 26px;
+        margin-bottom: 18px;
+    }
+    .dispositivos__texto p{
+        font-size: 16px;
+    }
+    .productos h1{
+        font-size: 26px;
+        margin-bottom: 18px;
+    }
+    .productos p{
+        font-size: 16px;
+    }
+    .leon__texto h3{
+        font-size: 26px;
+        margin-bottom: 18px;
+    }
+    .leon__texto p{
+        font-size: 16px;
+    }
+    .content__disp{
+        padding: 40px;
+    }
+    .cont__text h2{
+        font-size: 26px;
+    }
+    .disp__text h4{
+        font-size: 18px;
+        margin: 18px 0;
+    }
+    .disp__text p{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:576px){
+    .texto__final{
+        padding: 0 10px;
+    }
+    nav{
+        padding: 0 10px;
+        height: 50px;
+    }
+    .nav__boton--suscribcion{
+        font-size: 12px;
+    }
+    .nav__boton--login{
+        font-size: 12px;
+        margin-left: 10px;
+    }
+
+    .nav__img{
+        width: 60px;
+        height: 31px;
+    }
+    .suscribcion__precio{
+        font-size: 22px;
+    }
+    .suscribcion__precio span{
+        font-size: 11px;
+    }
+    .dispositivos__imagen img{
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+@media screen and (max-width: 440px){
+    .dispositivos__div{
+        padding: 30px 20px;
+    }
+    .sep{
+        padding: 30px 0;
+    }
+    .productos{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .algo1{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .div__boton{
+        padding: 30px 20px;
+    }
+    .leon__div{
+        margin: 0 20px;
+        padding: 30px 0;
+    }
+    .content__disp{
+        padding: 30px 20px;
+    }
+    .nav__boton{
+    text-transform: none;
+    }
+    .nav__boton--suscribcion{
+        text-transform: none;
+    }
+    .suscribcion__boton{
+        min-width: 100%;
+    }
+}
+@keyframes movimiento{
+    0%{
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+    }
+
+    100%{
+        transform: translateY(-15px);
+        -webkit-transform: translateY(-15px);
+        -moz-transform: translateY(-15px);
+        -ms-transform: translateY(-15px);
+        -o-transform: translateY(-15px);
+}
+}
